@@ -214,9 +214,9 @@ class C_STORE(object):
             raise TypeError("Affected SOP Instance UID must be a "
                             "pydicom.uid.UID, str or bytes")
 
-        if value is not None and not value.is_valid:
-            LOGGER.error("Affected SOP Instance UID is an invalid UID : {}".format(value))
-            raise ValueError("Affected SOP Instance UID is an invalid UID : {}".format(value))
+        #if value is not None and not value.is_valid:
+        #    LOGGER.error("Affected SOP Instance UID is an invalid UID : {}".format(value))
+        #    raise ValueError("Affected SOP Instance UID is an invalid UID : {}".format(value))
 
         self._affected_sop_instance_uid = value
 
